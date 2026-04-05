@@ -119,7 +119,7 @@ http://localhost:8501
 - Accuracy: ~95% on synthetic test data
 
 ## 👨‍💻 Author
-Sunil Kale
+Siya Kale
 Built with ❤️ using FastAPI + Streamlit + Scikit-learn
 
 ## 📄 License
