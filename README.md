@@ -46,20 +46,27 @@ Every payment goes through a 5-step AI pipeline:
 | ORM | SQLAlchemy |
 
 ## 📁 Project Structure
-
+```
 fraud-ai/
+│
 ├── backend/
-│   ├── main.py        ← FastAPI app
-│   ├── auth.py        ← JWT Authentication
-│   ├── db.py          ← MySQL connection
-│   ├── model.py       ← Database models
-│   ├── ml_model.py    ← RandomForest ML
-│   ├── data.py        ← Pydantic schemas
-│   └── payment.py     ← Fraud detection engine
+│   ├── main.py          ← FastAPI app entry point
+│   ├── auth.py          ← JWT Authentication & password hashing
+│   ├── db.py            ← MySQL database connection
+│   ├── model.py         ← SQLAlchemy database models
+│   ├── ml_model.py      ← RandomForest ML fraud model
+│   ├── data.py          ← Pydantic request/response schemas
+│   ├── payment.py       ← Core fraud detection engine
+│   └── .env             ← Environment variables (DB credentials)
+│
 ├── frontend/
-│   └── app.py         ← Streamlit dashboard
-├── schema.sql         ← MySQL schema
-└── requirements.txt
+│   └── app.py           ← Streamlit dashboard UI
+│
+├── schema.sql           ← MySQL database schema
+├── requirements.txt     ← Python dependencies
+├── start.bat            ← One click startup script
+└── .gitignore           ← Git ignore file
+```
 
 ## ⚙️ Installation & Setup
 
